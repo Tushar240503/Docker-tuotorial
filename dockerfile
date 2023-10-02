@@ -11,4 +11,4 @@ COPY . .
 # RUN npm install
 
 # Set the command to run the app.js script
-CMD ["node", "app/app.js"]
+CMD ["node", "app.js"]

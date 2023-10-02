@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+
+  app:
+    container_name: node-app
+    image: tushar24sharma/docker:8.3
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    environment:
+      PGUSER: postgres
+      PGHOST: postgres
+      PGDATABASE: mydatabase
+      PGPASSWORD: pass
+      PGPORT: 5432
+
+volumes:
+  data:
