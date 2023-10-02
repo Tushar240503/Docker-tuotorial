@@ -24,6 +24,11 @@ PostgreSQL as a Docker Container:
 The PostgreSQL database is set up to run as a Docker container. This means that the database is isolated in its own container, making it easier to manage and deploy as part of the application stack.
 In summary, this is a simple web application with an HTML frontend, a Node.js backend, and a PostgreSQL database. It's packaged using Docker, and a Docker Compose file is provided to help with the deployment and management of the application and its dependencies. This setup can be useful for creating a consistent development and deployment environment for the application.
 
+<img width="1440" alt="Screenshot 2023-10-01 at 8 40 28 PM" src="https://github.com/Tushar240503/Docker-tuotorial/assets/98592305/567dc89c-b3af-4074-b09c-5ae50bcb9744">
+<img width="1439" alt="Screenshot 2023-10-03 at 2 55 20 AM" src="https://github.com/Tushar240503/Docker-tuotorial/assets/98592305/c000c1c8-c8f6-46d7-ac4f-96714b0bdd9e">
+
+
+
 
 
 
